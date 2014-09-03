@@ -1,7 +1,7 @@
 rc.conf
 =======
 
-A chef LWRP for manipulating `rc.conf(5)` on FreeBSD machines.
+A chef HWRP for manipulating `rc.conf(5)` on FreeBSD machines.
 
 Usage
 -----
