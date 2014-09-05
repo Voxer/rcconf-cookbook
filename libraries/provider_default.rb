@@ -39,7 +39,7 @@ class Chef
 
         Chef::Log.debug "#{action} #{key}=#{value} in #{path}"
 
-        t = file "#{action} #{key}=#{value} in #{path}" do
+        t = file "#{action} #{key} in #{path}" do
           path path
           content lazy {
             # delete all instances of the key and append it to the end if apporpriate
