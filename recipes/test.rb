@@ -1,6 +1,6 @@
 #
 # Cookbook Name: rcconf
-# Library: matchers
+# Recipe: test
 #
 # Copyright:: Copyright (c) 2014, Voxer LLC
 # License: MIT License
