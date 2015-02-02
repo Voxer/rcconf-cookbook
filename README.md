@@ -1,7 +1,7 @@
 rc.conf
 =======
 
-A chef HWRP for manipulating `rc.conf(5)` on FreeBSD machines.
+A chef LWRP for manipulating `rc.conf(5)` on FreeBSD machines.
 
 Usage
 -----
@@ -49,11 +49,20 @@ rcconf 'Create Foobar if_missing' do
 end
 ```
 
-And finally, you can remove values with:
+You can remove values with:
 
 ``` ruby
 rcconf 'foobar' do
   action :remove
+end
+```
+
+And finally, you can set a custom path to use
+
+``` ruby
+rcconf 'foo' do
+  value 'bar'
+  path '/usr/local/etc/rc.conf'
 end
 ```
 
