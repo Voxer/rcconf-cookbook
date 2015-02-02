@@ -94,7 +94,7 @@ end
 
 # return the current rc.conf file as an array of lines as Strings without
 # trailing newline characters
-def get_lines
+def get_lines(path)
   ::IO.read(path).split("\n")
 end
 

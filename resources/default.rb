@@ -14,4 +14,4 @@ attribute :name, :name_attribute => true
 
 attribute :path, :kind_of => String, :default => '/etc/rc.conf'
 attribute :key,  :kind_of => String
-attribute :value, :required => true
+attribute :value
